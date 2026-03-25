@@ -1,0 +1,316 @@
+trigger:
+  branches:
+    include:
+      - azure_nightly  # You can specify your desired branch here
+
+schedules:
+  - cron: "0 0 * * *"  # Triggers the pipeline daily at 12:00 AM UTC (6 AM BST)
+    displayName: "Nightly Test"
+    branches:
+      include:
+        - azure_nightly  # Specify the branch to trigger the pipeline on
+    always: true  # Ensures the pipeline always runs at the scheduled time
+
+pool:
+  vmImage: 'ubuntu-latest'  # Use the latest Ubuntu image
+
+variables:
+  mavenVersion: '3.9.9'
+  TESTNG_XML: $(suite_path)
+  REPORTS_DIR: 'target/surefire-reports'
+
+  report_environment: $(environment)
+  report_documentTitle: "Test Report"
+  report_reportName: "Nightly Test Report"
+  report_suiteName: $(suite_name)
+  report_sprintName: $(sprint)
+  report_timezone: "UTC+6"
+  report_sendReportToTeams: "Yes"
+  report_teamsWebhookUrl: $(teams_url)
+
+  user_tester: $(tester)
+  user_email: $(sv_email)
+  user_password: $(sv_password)
+
+  ui_browser: $(browser)
+  ui_headless: true
+  ui_windowSize: "1920x1080"
+  ui_implicitWait: 10
+  ui_explicitWait: 20
+  ui_chromeDriverPath: "drivers/chromedriver.exe"
+  ui_firefoxDriverPath: "drivers/geckodriver.exe"
+  ui_url: $(sv_url)
+
+  api_baseUrl: $(api_base_url)
+  api_accessToken: $(api_access_token)
+  api_tokenUrl: $(token_url)
+  api_clientId: $(api_client_id)
+  api_clientSecret: $(api_client_secret)
+  api_orgId: $(api_org_id)
+
+  db_host: $(host)
+  db_port: $(port)
+  db_database: $(database)
+  db_url: $(DBUrl)
+  db_user: $(DBUser)
+  db_password: $(DBPassword)
+
+  friga_frigaUrl: $(friga_url)
+  friga_frigaPushLocationDataUrl: $(friga_push_location_data_url)
+  friga_frigaPushLocationDataEndpoint: $(friga_push_location_data_endpoint)
+  # TESTNG_XML: 'src/test/resources/testng_suites/testng_regression.xml'
+  # - group: TEST-test-automation-vars
+
+jobs:
+  - job: TestJob
+    timeoutInMinutes: 180
+    displayName: Run Selenium Tests
+    continueOnError: true
+
+    steps:
+      - script: |
+          echo mavenVersion=$(mavenVersion)
+          export TESTNG_XML=$(TESTNG_XML)
+          echo "TESTNG_XML=$TESTNG_XML"
+          export REPORTS_DIR=$(REPORTS_DIR)
+          echo "REPORTS_DIR=$REPORTS_DIR"
+          
+          export report_environment=$(report_environment)
+          echo "report_environment=$report_environment"
+          export report_documentTitle=$(report_documentTitle)
+          echo "report_documentTitle=$report_documentTitle"
+          export report_reportName=$(report_reportName)
+          echo "report_reportName=$report_reportName"
+          export report_suiteName=$(report_suiteName)
+          echo "report_suiteName=$report_suiteName"
+          export report_sprintName=$(report_sprintName)
+          echo "report_sprintName=$report_sprintName"
+          export report_timezone=$(report_timezone)
+          echo "report_timezone=$report_timezone"
+          export report_sendReportToTeams=$(report_sendReportToTeams)
+          echo "report_sendReportToTeams=$report_sendReportToTeams"
+          export report_teamsWebhookUrl=$(report_teamsWebhookUrl)
+          echo "report_teamsWebhookUrl=$report_teamsWebhookUrl"
+    
+          export user_tester=$(user_tester)
+          echo "user_tester=$user_tester"
+          export user_email=$(user_email)
+          echo "user_email=$user_email"
+          export user_password=$(user_password)
+          echo "user_password=$user_password"
+    
+          export ui_browser=$(ui_browser)
+          echo "ui_browser=$ui_browser"
+          export ui_headless=$(ui_headless)
+          echo "ui_headless=$ui_headless"
+          export ui_windowSize=$(ui_windowSize)
+          echo "ui_windowSize=$ui_windowSize"
+          export ui_implicitWait=$(ui_implicitWait)
+          echo "ui_implicitWait=$ui_implicitWait"
+          export ui_explicitWait=$(ui_explicitWait)
+          echo "ui_explicitWait=$ui_explicitWait"
+          export ui_chromeDriverPath=$(ui_chromeDriverPath)
+          echo "ui_chromeDriverPath=$ui_chromeDriverPath"
+          export ui_firefoxDriverPath=$(ui_firefoxDriverPath)
+          echo "ui_firefoxDriverPath=$ui_firefoxDriverPath"
+          export ui_url=$(ui_url)
+          echo "ui_url=$ui_url"
+    
+          export api_baseUrl=$(api_baseUrl)
+          echo "api_baseUrl=$api_baseUrl"
+          export api_accessToken=$(api_accessToken)
+          echo "api_accessToken=$api_accessToken"
+          export api_tokenUrl=$(api_tokenUrl)
+          echo "api_tokenUrl=$api_tokenUrl"
+          export api_clientId=$(api_clientId)
+          echo "api_clientId=$api_clientId"
+          export api_clientSecret=$(api_clientSecret)
+          echo "api_clientSecret=$api_clientSecret"
+          export api_orgId=$(api_orgId)
+          echo "api_orgId=$api_orgId"
+    
+          export db_host=$(db_host)
+          echo "db_host=$db_host"
+          export db_port=$(db_port)
+          echo "db_port=$db_port"
+          export db_database=$(db_database)
+          echo "db_database=$db_database"
+          export db_url=$(db_url)
+          echo "db_url=$db_url"
+          export db_user=$(db_user)
+          echo "db_user=$db_user"
+          export db_password=$(db_password)
+          echo "db_password=$db_password"
+    
+          export friga_frigaUrl=$(friga_frigaUrl)
+          echo "friga_frigaUrl=$friga_frigaUrl"
+          export friga_frigaPushLocationDataUrl=$(friga_frigaPushLocationDataUrl)
+          echo "friga_frigaPushLocationDataUrl=$friga_frigaPushLocationDataUrl"
+          export friga_frigaPushLocationDataEndpoint=$(friga_frigaPushLocationDataEndpoint)
+          echo "friga_frigaPushLocationDataEndpoint=$friga_frigaPushLocationDataEndpoint"
+#        env:
+#          # Maven Configuration
+#          mavenVersion: $(mavenVersion)
+#
+#          # Test Execution Configuration
+#          TESTNG_XML: $(TESTNG_XML)
+#          REPORTS_DIR: $(REPORTS_DIR)
+#
+#          # Report Metadata
+#          report_environment: $(report_environment)
+#          report_documentTitle: $(report_documentTitle)
+#          report_reportName: $(report_reportName)
+#          report_suiteName: $(report_suiteName)
+#          report_sprintName: $(report_sprintName)
+#          report_timezone: $(report_timezone)
+#          report_sendReportToTeams: $(report_sendReportToTeams)
+#          report_teamsWebhookUrl: $(report_teamsWebhookUrl)
+#
+#          # User Information
+#          user_tester: $(user_tester)
+#          user_email: $(user_email)
+#          user_password: $(user_password)
+#
+#          # UI Test Configuration
+#          ui_browser: $(ui_browser)
+#          ui_headless: $(ui_headless)
+#          ui_windowSize: $(ui_windowSize)
+#          ui_implicitWait: $(ui_implicitWait)
+#          ui_explicitWait: $(ui_explicitWait)
+#          ui_chromeDriverPath: $(ui_chromeDriverPath)
+#          ui_firefoxDriverPath: $(ui_firefoxDriverPath)
+#          ui_url: $(ui_url)
+#
+#          # API Test Configuration
+#          api_baseUrl: $(api_baseUrl)
+#          api_accessToken: $(api_accessToken)
+#          api_tokenUrl: $(api_tokenUrl)
+#          api_clientId: $(api_clientId)
+#          api_clientSecret: $(api_clientSecret)
+#          api_orgId: $(api_orgId)
+#
+#          # Database Configuration
+#          db_host: $(db_host)
+#          db_port: $(db_port)
+#          db_database: $(db_database)
+#          db_url: $(db_url)
+#          db_user: $(db_user)
+#          db_password: $(db_password)
+#
+#          # Friga System Configuration
+#          friga_frigaUrl: $(friga_frigaUrl)
+#          friga_frigaPushLocationDataUrl: $(friga_frigaPushLocationDataUrl)
+#          friga_frigaPushLocationDataEndpoint: $(friga_frigaPushLocationDataEndpoint)
+        displayName: Debug variables
+        
+      # Step 1: Checkout the code
+      - checkout: self
+
+      # Step 2: Install Google Chrome and ChromeDriver
+      - script: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          sudo apt-get install -y chromium-chromedriver
+          which chromedriver
+        displayName: Install Chrome and ChromeDriver
+
+      # Step 3: Install Java 11
+      - script: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-11-jdk
+          which java
+          readlink -f $(which java)
+          echo $JAVA_HOME
+          java -version
+        displayName: "Install Java 11"
+
+      # Step 4: Install Maven 3.9.9
+      - script: |
+          wget https://downloads.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
+          sudo tar -xvzf apache-maven-3.9.9-bin.tar.gz -C /opt
+          sudo rm -f /usr/bin/mvn
+          sudo ln -s /opt/apache-maven-3.9.9/bin/mvn /usr/bin/mvn
+          mvn -v  # Verify Maven installation
+        displayName: Install Maven 3.9.9
+
+      # Step 5: Run Selenium Tests using Maven and TestNG
+      - script: |
+          export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+          echo "Using Java Home: $JAVA_HOME"
+          java -version
+
+          # Create the output directories if they don't exist
+          mkdir -p $(Build.SourcesDirectory)/target/testng-reports
+          mkdir -p $(Build.SourcesDirectory)/target/surefire-reports
+
+          # Debug TestNG XML file path
+          echo "TestNG XML file path: $(suite_path)"
+          
+          # Directly specify a default TestNG XML file if the variable is not available
+          if [ -z "$(suite_path)" ]; then
+            echo "suite_path variable is empty, using default TestNG XML"
+            TESTNG_FILE="src/test/resources/testng_suites/testng_regression.xml"
+          else
+            TESTNG_FILE="$(suite_path)"
+          fi
+          
+          echo "Using TestNG file: $TESTNG_FILE"
+          
+          export MAVEN_OPTS="-Dmaven.test.failure.ignore=true"
+          echo "Running Tests with Maven and TestNG..."
+          
+          mvn clean test \
+            -DsuiteXmlFile="$TESTNG_FILE" \
+            -Dsurefire.useFile=false \
+            -DoutputDirectory=target/testng-reports \
+            -fae | tee test_execution.log
+        displayName: Run Selenium Regression Tests
+        continueOnError: true
+
+      # Step 6: Publish the test results
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: |
+            **/target/surefire-reports/TEST-*.xml
+            **/target/surefire-reports/junitreports/TEST-*.xml
+            **/target/testng-reports/TEST-*.xml
+          searchFolder: '$(Build.SourcesDirectory)'
+          mergeTestResults: true
+          testRunTitle: 'TestNG Test Results'
+          failTaskOnFailedTests: false  # Don't fail the task on test failures
+          publishRunAttachments: true
+        displayName: 'Publish Test Results'
+        condition: succeededOrFailed()
+
+      # Step 7: Publish Surefire Reports
+      - task: PublishPipelineArtifact@1
+        inputs:
+          targetPath: '$(Build.SourcesDirectory)/target/surefire-reports'
+          artifact: 'TestReports-Surefire'
+          publishLocation: 'pipeline'
+        displayName: 'Publish Surefire Test Reports'
+        condition: succeededOrFailed()
+
+      # Step 8: Publish TestNG Reports with directory existence check
+      - task: Bash@3
+        inputs:
+          targetType: 'inline'
+          script: |
+            if [ -d "$(Build.SourcesDirectory)/target/testng-reports" ]; then
+              echo "##vso[task.setvariable variable=testngReportsExist]true"
+            else
+              echo "##vso[task.setvariable variable=testngReportsExist]false"
+              echo "TestNG reports directory does not exist. Skipping publish step."
+            fi
+        displayName: 'Check if TestNG reports exist'
+        continueOnError: true
+
+      - task: PublishPipelineArtifact@1
+        inputs:
+          targetPath: '$(Build.SourcesDirectory)/target/testng-reports'
+          artifact: 'TestReports-TestNG'
+          publishLocation: 'pipeline'
+        displayName: 'Publish TestNG Test Reports'
+        condition: and(succeededOrFailed(), eq(variables['testngReportsExist'], 'true'))
+        continueOnError: true

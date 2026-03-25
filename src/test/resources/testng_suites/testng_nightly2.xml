@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Shipment Test">
+    <test name="Completion Test">
+        <classes>
+            <!-- classes with regression tests -->
+            <!--            <class name="com.TEST.tests.LoginTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="L001_LoginWithEmptyField_TC0000"/>-->
+            <!--                    <include name="L002_LoginWithUnRegisteredCredential_TC0000"/>-->
+            <!--                    <include name="L003_LoginWithInvalidPassword_TC0000"/>-->
+            <!--                    <include name="L004_LoginWithValidCredentials_TC0000"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <!--            <class name="com.TEST.tests.DashboardTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="D001_VerifySideBarLayout_TC6836"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <!--            <class name="com.TEST.tests.RulesTest">-->
+            <!--                <methods>-->
+            <!--                    &lt;!&ndash; <include name="RL001_verifyFuncOfDLSorting_TC7652"/> db &ndash;&gt;-->
+            <!--                    &lt;!&ndash; <include name="RL002_verifyRulesListSearch_TC7673"/> db &ndash;&gt;-->
+            <!--                    <include name="RL003_verifyGlobalRulesCreation_TC8246"/>-->
+            <!--                    <include name="RL004_verifyUpdateRulesFunctionality_TC8272"/>-->
+            <!--                    <include name="RL005_rulesCreateSearchUpdateTestCaseCompilation_TC0000"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <!--            <class name="com.TEST.tests.AreaTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="AR001_verifyAreaCreation_TC0000"/>-->
+            <!--                    <include name="AR002_areaCreateUpdateSummaryAreaDetailsGeneralInfo_TC0000"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <!--            <class name="com.TEST.tests.RouteTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="AR001_verifyRouteCreation_TC0000"/>-->
+            <!--                    <include name="AR002_routeCreateUpdateSummaryRouteDetailsGeneralInfo_TC0000"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <!--            <class name="com.TEST.tests.DataLoggersProfileTest">-->
+            <!--                <methods>-->
+            <!--                    &lt;!&ndash; <include name="DLP001_verifyFuncOfDLSorting_TC8789"/> db &ndash;&gt;-->
+            <!--                    &lt;!&ndash; <include name="DLP002_verifyDLPListSearch_TC9336"/> db &ndash;&gt;-->
+            <!--                    &lt;!&ndash; <include name="DLP003_CreateNewDeviceAndVerifyDeviceInfoFromListInExndFromDB"/> db &ndash;&gt;-->
+            <!--                    <include name="DLP004_createUpdateConfigSearchValidate"/>-->
+            <!--                    <include name="DLP005_verifyAssignedDevicesWithDeviceProfile_TC0000"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <!--            <class name="com.TEST.tests.DataLoggersTest">-->
+            <!--                <methods>-->
+            <!--                    &lt;!&ndash; <include name="DL001_verifyFuncOfDLSorting_TC6684"/> db &ndash;&gt;-->
+            <!--                    &lt;!&ndash; <include name="DL002_verifyDataLoggerListSearch_TC7727"/> db &ndash;&gt;-->
+            <!--                    &lt;!&ndash; <include name="DL003_CreateNewDeviceAndVerifyDeviceInfoFromListInExndFromDB_TC6053"/> db &ndash;&gt;-->
+            <!--                    <include name="DL004_verifyCreatingDataLoggerTypeWithDataLoggerProfile_TC0000"/>-->
+            <!--                    <include name="DL005_createUpdateSearchPopupCardDetailsPage_TC0000"/>-->
+            <!--                    <include name="DL006_dataLoggerProfileValidate_TC0000"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <class name="com.TEST.tests.AssetsTest">
+                <methods>
+                    <include name="A001_VerifyComponentsOfAddNewAsset_TC4568"/>
+                    <include name="A002_VerifyComponentsOfAssetPage_TC4542"/>
+                    <include name="A003_VerifyDataGridOnAssetPage_TC4543"/>
+                    <include name="A004_VerifyTheComponentsOnTheAssetDetails_GeneralInfo_TC4544"/>
+                    <include name="A005_VerifyTheCorrespondingDataOnTheAssetDetails_GenInfo_TC4558"/>
+                    <include name="A006_VerifyTheFieldLevelOnNewAssetModal_TC4653"/>
+                    <include name="A007_VerifyAssetsGridAfterAdditionOfNewAsset_TC4655"/>
+                    <include name="A008_VerifyComponentsOnBoundDataLoggers_TC6040"/>
+                    <include name="A009_verifyPaginationFunctionalityOnAssetListGrid_TC6046"/>
+                    <include name="A010_VerifyGridConfigFuncOnAssetListGrid_TC6047"/>
+                    <!-- <include name="A011_VerifyFuncFilteringAssetsList_TC6432"/> hard assertion -->
+                    <include name="A012_A013_AndExtendedVerifyAssetDelete_UpdateActionWhenAShipmentStatusIsActiveInActiveExtended_TC7655AndTC7781"/>
+                    <include name="A014_VerifyBindAssetFuncByClickBindIcon_TC6320"/>
+                    <include name="A015_VerifyUnbindAssetFuncByClickUnBindIcon_TC6321"/>
+                    <include name="A016_VerifyAssetSummaryPopupWithCorrectDetails_TC6355"/>
+                    <include name="A017_NavigateToFullAssetDetailsPageAndVerifyAssetSummary_TC6356"/>
+                    <include name="A018_searchAssetFromAssetList_TC6438"/>
+                    <include name="A019_verifySortingInAssetDataGrid_TC6056"/>
+                    <include name="A020_verifyValueGeolocationLastLocationAfterBindAndUnbindDL_TC9137"/>
+                    <include name="A021_VerifyAssetDetailsEnvironmentalDataAndCondition_TC6352"/>
+                    <include name="A022_VerifyDuplicateDataLoggerPrevention_TC9404"/>
+                    <include name="A023_verifyAssetMovementAndAssetData"/>
+                </methods>
+            </class>
+            <class name="com.TEST.tests.ShipmentsTest">
+                <methods>
+                    <include name="S001_VerifyComponentsOnShipmentsPage_TC6679"/>
+                    <include name="S002_VerifyDataGridOnShipmentsPage_TC6680"/>
+                    <include name="S003_VerifyAddNewShipmentBulkAirCargo_TC6702"/>
+                    <include name="S004_VerifySuccessfulCreationOfBulkAirCargoShipmentWithValidData_TC6924"/>
+                    <include name="S005_EnsureFieldLevelErrorHandlingInCreateShipmentForm_TC6926"/>
+                    <include name="S006_VerifyPaginationFuncShipmentListGrid_TC7062"/>
+                    <include name="S007_VerifySuccessfulCreationOfCellAndGeneShipmentWithValidData_TC7646"/>
+                    <include name="S008_VerifyUIContentsOfAddCellAndGeneShipmentModal_TC7645"/>
+                    <include name="S009_EnsureFieldLevelErrorHandlingInCreateShipmentForm_TC7808"/>
+                    <!-- <include name="S010_verifySearchFunctionInShipment"/> db -->
+                    <!-- <include name="S011_verifyFuncOfSortForShipmentList_TC7056"/> -->
+                    <include name="S012_AssetCreationDataValidationAutomation_TC0000"/>
+                    <include name="S013_VerifyShipmentTravel_TC0000"/>
+                    <include name="S014_VerifyShipmentJourneyWithOneAsset_TC0000"/>
+                    <include name="S015_VerifyShipmentJourneyWithForExistingShipment_TC0000"/>
+                    <include name="S016_VerifyExcursionResolutionEmailNotification_TC8331"/>
+                    <include name="S017_VerifyShipmentDetailsStatusTabInBulkAirCargoShipment_TC0000"/>
+                    <include name="S018_VerifyShipmentDetailsStatusTabInParcelShipment_TC0000"/>
+                    <include name="S019_VerifyShipmentDetailsStatusTabInCellAndGeneShipment_TC0000"/>
+                    <!-- <include name="S020_VerifyShipmentLocationAndTelemetryData_TC0000"/> -->
+                    <!-- <include name="S021_VerifyExcursion_TC0000"/> api creation -->
+                    <include name="S022_VerifyShipmentDataInPDF_TC0000"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

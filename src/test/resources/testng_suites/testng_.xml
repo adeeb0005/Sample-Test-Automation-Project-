@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Shipment Test">
+    <test name="Completion Test">
+        <!--        <groups>-->
+        <!--            <run>-->
+        <!--                <include name="regression"/>-->
+        <!--            </run>-->
+        <!--        </groups>-->
+        <classes>
+            <!-- classes with regression tests -->
+<!--            <class name="com.TEST.tests.LoginTest"/>-->
+                <class name="com.TEST.tests.ShipmentsTest">
+                    <methods>
+                        <include name="S001_VerifyComponentsOnShipmentsPage_TC6679"/>
+                        <include name="S004_VerifySuccessfulCreationOfBulkAirCargoShipmentWithValidData_TC6924"/>
+                        <include name="S009_EnsureFieldLevelErrorHandlingInCreateShipmentForm_TC7808"/>
+<!--                        <include name="S014_VerifyShipmentJourneyWithOneAsset_TC0000"/>-->
+                    </methods>
+                </class>
+        </classes>
+    </test>
+</suite>

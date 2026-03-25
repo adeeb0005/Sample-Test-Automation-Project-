@@ -1,0 +1,25 @@
+#version: '3.8'
+#
+#services:
+#  automation:
+#    image: your-image-name:latest
+#    container_name: automation_tests
+#    environment:
+#      - TESTNG_XML=/config/testng.xml  # Specify the TestNG XML file
+#    volumes:
+#      - ./config:/config  # Mount configuration files (including TestNG XML, properties)
+#      - ./reports:/report  # Mount reports directory
+#    command: ["mvn", "test", "-Dsurefire.suiteXmlFiles=${TESTNG_XML}"]
+
+version: "3.8"
+services:
+  ui-tests:
+    build: .
+    container_name: selenium-ui-tests
+    environment:
+      - DISPLAY=:99
+      - TEST_SUITE=src/test/resources/testng_suites/regression.xml
+    volumes:
+      - ./reports:/app/reports  # Mount reports for test results
+    tty: true
+#  docker-compose run ui-tests -e TEST_SUITE="src/test/resources/testng_suites/smoke.xml"

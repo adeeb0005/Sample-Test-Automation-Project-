@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Critical API Suite">
+    <test name="API Tests">
+        <groups>
+            <run>
+                <include name="API" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.TEST.tests.api.CriticalAPITests" />
+            <!--            <class name="com.TEST.tests.OtherTestClass" />-->
+        </classes>
+    </test>
+</suite>

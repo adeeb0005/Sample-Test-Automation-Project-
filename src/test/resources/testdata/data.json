@@ -1,0 +1,703 @@
+{
+  "S004_VerifySuccessfulCreationOfBulkAirCargoShipmentWithValidData_TC6924": {
+    "shipmentType": "Bulk Air Cargo",
+    "shipmentName": "AutoShipment",
+    "shipperName": "AutoShipper",
+    "orderNumber": "AutoOrderNumber",
+    "carrier": {
+      "carrierName": "FedEx",
+      "carrierId": "cb42f1fd-fdc2-45e2-b5d8-a7c670f3b4a4"
+    },
+    "modeOfTransport": "",
+    "customerName": "AutoCustomer",
+    "recipientName": "AutoRecipient",
+    "organization": {
+      "organizationName": "doglapan Training - Air Cargo",
+      "organizationId": "49194360-27ab-4434-991f-88116dc775bb"
+    },
+    "dataLoggerProfile": {
+      "dataLoggerProfileName": "AutoDLP005",
+      "dataLoggerProfileId": "72FB52F9-224C-46EA-A950-770E299D41C0",
+      "dataLoggerTypeName": "Tradoglapan Pro"
+    },
+    "rules": [
+      {
+        "ruleName": "Rule 234",
+        "ruleId": "9f8afdb3-ed10-4b1b-a420-5eb8c87bc9fa"
+      }
+    ],
+    "originAndDestination": {
+      "shipmentDirection": "Outbound",
+      "locationOrRoute": "Route",
+      "route": {
+        "routeId": "6fe1f53c-fc51-4729-9c70-1ed0504ed082",
+        "routeName": "AutoRoute DOH-DAC-COX",
+        "originLocationName": "AutoAreaDohaAir",
+        "originLocationId": "CCB314E8-1CDE-44B6-B034-014C68806754",
+        "destinationLocationName": "AutoAreaCoxsBazarRoad",
+        "destinationLocationId": "3D08295F-55D4-44A9-AF4B-04E811C4E571"
+      },
+      "location": {
+        "origin": {
+          "isPredefined": "",
+          "area": ""
+        },
+        "destination": {
+          "isPredefined": "",
+          "area": ""
+        }
+      },
+      "plannedArrivalDate": "",
+      "plannedDepartureDate": ""
+    },
+    "assetsInShipment": [
+      {
+        "assetName": "AutoAPIAsset1738149929",
+        "assetId": "a79ab687-a2bc-40f1-a2d1-b632a7c7be5e",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerName": "AutoAPIDevice1738149929",
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "0ce73738-6909-4020-a1b5-29a0886b4fc6"
+          }
+        ]
+      },
+      {
+        "assetName": "AutoAPIAsset1738149810",
+        "assetId": "7be36a1f-3e86-4b66-a364-09f3fb0f4906",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerName": "AutoAPIDevice1738149810",
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "18d0ec9f-f19c-4e96-80af-c14cd83f7f36"
+          }
+        ]
+      }
+    ],
+    "airwayBillNumber": "",
+    "email": "test1@example.com, test2@example.com"
+  },
+  "S007_VerifySuccessfulCreationOfCellAndGeneShipmentWithValidData_TC7646": {
+    "shipmentType": "Cell and Gene",
+    "shipmentName": "AutoShipment",
+    "shipperName": "AutoShipper",
+    "orderNumber": "AutoOrderNumber",
+    "carrier": {
+      "carrierName": "FedEx",
+      "carrierId": "cb42f1fd-fdc2-45e2-b5d8-a7c670f3b4a4"
+
+    },
+    "modeOfTransport": "",
+    "customerName": "AutoCustomer",
+    "recipientName": "AutoRecipient",
+    "organization": {
+      "organizationName": "doglapan Training - Air Cargo",
+      "organizationId": "49194360-27ab-4434-991f-88116dc775bb"
+
+    },
+    "dataLoggerProfile": {
+      "dataLoggerProfileName": "AutoDLP005",
+      "dataLoggerProfileId": "72FB52F9-224C-46EA-A950-770E299D41C0",
+      "dataLoggerTypeName": "Tradoglapan Pro"
+    },
+    "rules": [
+      {
+        "ruleName": "Rule 234",
+        "ruleId": "9f8afdb3-ed10-4b1b-a420-5eb8c87bc9fa"
+      }
+    ],
+    "originAndDestination": {
+      "shipmentDirection": "Outbound",
+      "locationOrRoute": "Route",
+      "route": {
+        "routeId": "6fe1f53c-fc51-4729-9c70-1ed0504ed082",
+        "routeName": "AutoRoute DOH-DAC-COX",
+        "originLocationName": "AutoAreaDohaAir",
+        "originLocationId": "CCB314E8-1CDE-44B6-B034-014C68806754",
+        "destinationLocationName": "AutoAreaCoxsBazarRoad",
+        "destinationLocationId": "3D08295F-55D4-44A9-AF4B-04E811C4E571"
+      },
+      "location": {
+        "origin": {
+          "isPredefined": "",
+          "area": ""
+        },
+        "destination": {
+          "isPredefined": "",
+          "area": ""
+        }
+      },
+      "plannedArrivalDate": "",
+      "plannedDepartureDate": ""
+    },
+    "assetsInShipment": [
+      {
+        "assetName": "AutoAPIAsset1738153838",
+        "assetId": "ee6f2675-aff7-47eb-a689-5438601a1290",
+        "assetType": "CGT Hand Carry",
+        "dataLogger": [
+          {
+            "dataLoggerName": "AutoAPIDevice1738153838",
+            "dataLoggerType": "932a684-fa3e-4a97-bb2c-abda129a0e5c",
+            "dataLoggerId": "Tradoglapan Pro"
+          }
+        ]
+      },
+      {
+        "assetName": "AutoAPIAsset1738153834",
+        "assetId": "c78bac94-4213-48d2-85b9-37e850a10cee",
+        "assetType": "CGT Hand Carry",
+        "dataLogger": [
+          {
+            "dataLoggerName": "AutoAPIDevice1738153834",
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "ec6a30c1-3ac1-4504-9c88-3d484e9d38dd"
+          }
+        ]
+      }
+    ],
+    "airwayBillNumber": "",
+    "email": "test1@example.com, test2@example.com"
+  },
+  "S013_VerifyShipmentTravel_TC0000": {},
+  "S014_VerifyShipmentJourneyWithOneAsset_TC0000": {
+    "shipmentType": "Bulk Air Cargo",
+    "shipmentName": "AutoShipment",
+    "shipperName": "AutoShipper",
+    "orderNumber": "AutoOrderNumber",
+    "carrier": {
+      "carrierName": "FedEx",
+      "carrierId": "cb42f1fd-fdc2-45e2-b5d8-a7c670f3b4a4"
+
+    },
+    "modeOfTransport": "",
+    "customerName": "AutoCustomer",
+    "recipientName": "AutoRecipient",
+    "organization": {
+      "organizationName": "doglapan Training - Air Cargo",
+      "organizationId": "49194360-27ab-4434-991f-88116dc775bb"
+
+    },
+    "dataLoggerProfile": {
+      "dataLoggerProfileName": "AutoDLP005",
+      "dataLoggerProfileId": "72FB52F9-224C-46EA-A950-770E299D41C0",
+      "dataLoggerTypeName": "Tradoglapan Pro"
+    },
+    "rules": [
+      {
+        "ruleName": "Rule 234",
+        "ruleId": "9f8afdb3-ed10-4b1b-a420-5eb8c87bc9fa"
+      }
+    ],
+    "originAndDestination": {
+      "shipmentDirection": "Outbound",
+      "locationOrRoute": "Route",
+      "route": {
+        "routeId": "6fe1f53c-fc51-4729-9c70-1ed0504ed082",
+        "routeName": "AutoRoute DOH-DAC-COX",
+        "originLocationName": "AutoAreaDohaAir",
+        "originLocationId": "CCB314E8-1CDE-44B6-B034-014C68806754",
+        "destinationLocationName": "AutoAreaCoxsBazarRoad",
+        "destinationLocationId": "3D08295F-55D4-44A9-AF4B-04E811C4E571"
+      },
+      "location": {
+        "origin": {
+          "isPredefined": "",
+          "area": ""
+        },
+        "destination": {
+          "isPredefined": "",
+          "area": ""
+        }
+      },
+      "plannedArrivalDate": "",
+      "plannedDepartureDate": ""
+    },
+    "assetsInShipment": [
+      {
+        "assetName": "AutoAPIAsset1743084271",
+        "assetId": "53989db9-1391-4e7a-9363-962f178d73d0",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerName": "AutoDevice1743084276",
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "55e17c65-256e-44cc-94a0-f132e7d37ed6"
+          }
+        ]
+      }
+    ],
+    "airwayBillNumber": "",
+    "email": "test1@example.com, test2@example.com"
+  },
+  "S015_VerifyShipmentJourneyWithForExistingShipment_TC0000": {},
+  "S016_VerifyExcursionResolutionEmailNotification_TC8331": {},
+  "S017_VerifyShipmentDetailsStatusTabInBulkAirCargoShipment_TC0000": {
+    "shipmentType": "Bulk Air Cargo",
+    "shipmentName": "AutoShipment",
+    "shipperName": "AutoShipper",
+    "orderNumber": "AutoOrderNumber",
+    "carrier": {
+      "carrierName": "FedEx",
+      "carrierId": "cb42f1fd-fdc2-45e2-b5d8-a7c670f3b4a4"
+
+    },
+    "modeOfTransport": "",
+    "customerName": "AutoCustomer",
+    "recipientName": "AutoRecipient",
+    "organization": {
+      "organizationName": "doglapan Training - Air Cargo",
+      "organizationId": "49194360-27ab-4434-991f-88116dc775bb"
+
+    },
+    "dataLoggerProfile": {
+      "dataLoggerProfileName": "AutoDLP005",
+      "dataLoggerProfileId": "72FB52F9-224C-46EA-A950-770E299D41C0",
+      "dataLoggerTypeName": "Tradoglapan Pro"
+    },
+    "rules": [
+      {
+        "ruleName": "Rule 234",
+        "ruleId": "9f8afdb3-ed10-4b1b-a420-5eb8c87bc9fa"
+      }
+    ],
+    "originAndDestination": {
+      "shipmentDirection": "Outbound",
+      "locationOrRoute": "Route",
+      "route": {
+        "routeId": "6fe1f53c-fc51-4729-9c70-1ed0504ed082",
+        "routeName": "AutoRoute DOH-DAC-COX",
+        "originLocationName": "AutoAreaDohaAir",
+        "originLocationId": "CCB314E8-1CDE-44B6-B034-014C68806754",
+        "destinationLocationName": "AutoAreaCoxsBazarRoad",
+        "destinationLocationId": "3D08295F-55D4-44A9-AF4B-04E811C4E571"
+      },
+      "location": {
+        "origin": {
+          "isPredefined": "",
+          "area": ""
+        },
+        "destination": {
+          "isPredefined": "",
+          "area": ""
+        }
+      },
+      "plannedArrivalDate": "",
+      "plannedDepartureDate": ""
+    },
+    "assetsInShipment": [
+      {
+        "assetName": "AutoAPIAsset1738149751",
+        "assetId": "105303b2-19ac-4cac-a830-4a08e6e8b2e0",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerName": "AutoAPIDevice1738149751",
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "7d2470da-252b-4efe-951c-c84cc59ec6f2"
+          }
+        ]
+      },
+      {
+        "assetName": "AutoAPIAsset1738149772",
+        "assetId": "a0e3f510-2b01-460b-815d-2b464a2df897",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerName": "AutoAPIDevice1738149772",
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "06f18af4-439f-44ea-95ce-9d09bfbc3a54"
+          }
+        ]
+      }
+    ],
+    "airwayBillNumber": "",
+    "email": "test1@example.com, test2@example.com"
+  },
+  "S018_VerifyShipmentDetailsStatusTabInParcelShipment_TC0000": {
+    "shipmentType": "Parcel",
+    "shipmentName": "AutoShipment",
+    "shipperName": "AutoShipper",
+    "orderNumber": "AutoOrderNumber",
+    "carrier": {
+      "carrierName": "FedEx",
+      "carrierId": "cb42f1fd-fdc2-45e2-b5d8-a7c670f3b4a4"
+    },
+    "modeOfTransport": "",
+    "customerName": "AutoCustomer",
+    "recipientName": "AutoRecipient",
+    "organization": {
+      "organizationName": "doglapan Training - Air Cargo",
+      "organizationId": "49194360-27ab-4434-991f-88116dc775bb"
+    },
+    "dataLoggerProfile": {
+      "dataLoggerProfileName": "AutoDLP005",
+      "dataLoggerProfileId": "72FB52F9-224C-46EA-A950-770E299D41C0",
+      "dataLoggerTypeName": "Tradoglapan Pro"
+    },
+    "rules": [
+      {
+        "ruleName": "Rule 234",
+        "ruleId": "9f8afdb3-ed10-4b1b-a420-5eb8c87bc9fa"
+      }
+    ],
+    "originAndDestination": {
+      "shipmentDirection": "Outbound",
+      "locationOrRoute": "Route",
+      "route": {
+        "routeId": "6fe1f53c-fc51-4729-9c70-1ed0504ed082",
+        "routeName": "AutoRoute DOH-DAC-COX",
+        "originLocationName": "AutoAreaDohaAir",
+        "originLocationId": "CCB314E8-1CDE-44B6-B034-014C68806754",
+        "destinationLocationName": "AutoAreaCoxsBazarRoad",
+        "destinationLocationId": "3D08295F-55D4-44A9-AF4B-04E811C4E571"
+      },
+      "location": {
+        "origin": {
+          "isPredefined": "",
+          "area": ""
+        },
+        "destination": {
+          "isPredefined": "",
+          "area": ""
+        }
+      },
+      "plannedArrivalDate": "",
+      "plannedDepartureDate": ""
+    },
+    "assetsInShipment": [
+      {
+        "assetName": "auto Softbox® VIP 1741179852",
+        "assetId": "23caf4ff-8af4-44f3-aae6-43bc5abc4658",
+        "assetType": "Softbox® VIP",
+        "dataLogger": [
+          {
+            "dataLoggerName": "Auto Device Tradoglapan Pro 001",
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "0dbbe618-3fa0-40aa-9358-def6d68ef525"
+          }
+        ]
+      },
+      {
+        "assetName": "auto Courier MAX 1741179825",
+        "assetId": "a8894ddc-446f-4b55-97f6-822065543a64",
+        "assetType": "Courier MAX",
+        "dataLogger": [
+          {
+            "dataLoggerName": "Auto Device Tradoglapan Max 001",
+            "dataLoggerType": "Tradoglapan Max",
+            "dataLoggerId": "a754f86d-d6b0-4951-8800-807e64a9d615"
+          }
+        ]
+      }
+    ],
+    "airwayBillNumber": "",
+    "email": "test1@example.com, test2@example.com"
+  },
+  "S019_VerifyShipmentDetailsStatusTabInCellAndGeneShipment_TC0000": {
+    "shipmentType": "Cell and Gene",
+    "shipmentName": "AutoShipment",
+    "shipperName": "AutoShipper",
+    "orderNumber": "AutoOrderNumber",
+    "carrier": {
+      "carrierName": "FedEx",
+      "carrierId": "cb42f1fd-fdc2-45e2-b5d8-a7c670f3b4a4"
+    },
+    "modeOfTransport": "",
+    "customerName": "AutoCustomer",
+    "recipientName": "AutoRecipient",
+    "organization": {
+      "organizationName": "doglapan Training - Air Cargo",
+      "organizationId": "49194360-27ab-4434-991f-88116dc775bb"
+    },
+    "dataLoggerProfile": {
+      "dataLoggerProfileName": "AutoDLP005",
+      "dataLoggerProfileId": "72FB52F9-224C-46EA-A950-770E299D41C0",
+      "dataLoggerTypeName": "Tradoglapan Pro"
+    },
+    "rules": [
+      {
+        "ruleName": "Rule 234",
+        "ruleId": "9f8afdb3-ed10-4b1b-a420-5eb8c87bc9fa"
+      }
+    ],
+    "originAndDestination": {
+      "shipmentDirection": "Outbound",
+      "locationOrRoute": "Route",
+      "route": {
+        "routeId": "6fe1f53c-fc51-4729-9c70-1ed0504ed082",
+        "routeName": "AutoRoute DOH-DAC-COX",
+        "originLocationName": "AutoAreaDohaAir",
+        "originLocationId": "CCB314E8-1CDE-44B6-B034-014C68806754",
+        "destinationLocationName": "AutoAreaCoxsBazarRoad",
+        "destinationLocationId": "3D08295F-55D4-44A9-AF4B-04E811C4E571"
+      },
+      "location": {
+        "origin": {
+          "isPredefined": "",
+          "area": ""
+        },
+        "destination": {
+          "isPredefined": "",
+          "area": ""
+        }
+      },
+      "plannedArrivalDate": "",
+      "plannedDepartureDate": ""
+    },
+    "assetsInShipment": [
+      {
+        "assetName": "auto CGT Cryo M4 1741179821",
+        "assetId": "25a7d2a1-7ebc-469b-8e55-514ca25abf44",
+        "assetType": "CGT Cryo M4",
+        "dataLogger": [
+          {
+            "dataLoggerName": "Auto Device Tradoglapan RLT T72 001",
+            "dataLoggerType": "Tradoglapan RLT T72",
+            "dataLoggerId": "3df0d1c3-03d6-42db-b1d5-4bed971864c9"
+          }
+        ]
+      },
+      {
+        "assetName": "auto CGT Cryo M10 1741179848",
+        "assetId": "09932b2f-bb01-49ed-9f53-8c1519722cf0",
+        "assetType": "CGT Cryo M10",
+        "dataLogger": [
+          {
+            "dataLoggerName": "Auto Device Tradoglapan NFC 001",
+            "dataLoggerType": "Tradoglapan NFC",
+            "dataLoggerId": "d1766a13-3727-4d4e-8542-2562ba8a1044"
+          }
+        ]
+      }
+    ],
+    "airwayBillNumber": "",
+    "email": "test1@example.com, test2@example.com"
+  },
+  "S020_VerifyShipmentLocationAndTelemetryData_TC0000": {
+    "shipmentType": "Bulk Air Cargo",
+    "shipmentName": "AutoShipment",
+    "shipperName": "AutoShipper",
+    "orderNumber": "AutoOrderNumber",
+    "carrier": {
+      "carrierName": "FedEx",
+      "carrierId": "cb42f1fd-fdc2-45e2-b5d8-a7c670f3b4a4"
+    },
+    "modeOfTransport": "",
+    "customerName": "AutoCustomer",
+    "recipientName": "AutoRecipient",
+    "organization": {
+      "organizationId": "49194360-27ab-4434-991f-88116dc775bb",
+      "organizationName": "doglapan Training - Air Cargo"
+    },
+    "dataLoggerProfile": {
+      "dataLoggerProfileId": "72FB52F9-224C-46EA-A950-770E299D41C0",
+      "dataLoggerProfileName": "AutoDLP005",
+      "dataLoggerTypeName": "Tradoglapan Pro"
+    },
+    "rules": [
+      {
+        "ruleId": "9f8afdb3-ed10-4b1b-a420-5eb8c87bc9fa",
+        "ruleName": "Rule 234"
+      }
+    ],
+    "originAndDestination": {
+      "shipmentDirection": "Outbound",
+      "locationOrRoute": "Route",
+      "route": {
+        "routeId": "6fe1f53c-fc51-4729-9c70-1ed0504ed082",
+        "routeName": "AutoRoute DOH-DAC-COX",
+        "originLocationName": "AutoAreaDohaAir",
+        "originLocationId": "CCB314E8-1CDE-44B6-B034-014C68806754",
+        "destinationLocationName": "AutoAreaCoxsBazarRoad",
+        "destinationLocationId": "3D08295F-55D4-44A9-AF4B-04E811C4E571"
+      },
+      "location": {
+        "origin": {
+          "isPredefined": "",
+          "area": ""
+        },
+        "destination": {
+          "isPredefined": "",
+          "area": ""
+        }
+      },
+      "plannedArrivalDate": "",
+      "plannedDepartureDate": ""
+    },
+    "assetsInShipment": [
+      {
+        "assetId": "ec3898b5-a810-4af8-8f5a-35f59ad7d383",
+        "assetName": "AutoAPIAsset1743086613",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "f01856f3-e4ee-4f48-abe0-decfc27c9077",
+            "dataLoggerName": "AutoDevice1743086619"
+          }
+        ]
+      },
+      {
+        "assetId": "cceb9f03-c656-48a9-b9af-3a42fcc4319d",
+        "assetName": "AutoAPIAsset1743086673",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "ed7f8faf-e252-445c-8361-f02214b7d166",
+            "dataLoggerName": "AutoDevice1743086677"
+          }
+        ]
+      }
+    ],
+    "airwayBillNumber": "",
+    "email": "test1@example.com, test2@example.com"
+  },
+  "S021_VerifyExcursion_TC0000": {
+    "shipmentType": "Bulk Air Cargo",
+    "shipmentName": "AutoShipment",
+    "shipperName": "AutoShipper",
+    "orderNumber": "AutoOrderNumber",
+    "carrier": {
+      "carrierName": "FedEx",
+      "carrierId": "cb42f1fd-fdc2-45e2-b5d8-a7c670f3b4a4"
+    },
+    "customerName": "AutoCustomer",
+    "recipientName": "AutoRecipient",
+    "organization": {
+      "organizationId": "49194360-27ab-4434-991f-88116dc775bb",
+      "organizationName": "doglapan Training - Air Cargo"
+    },
+    "dataLoggerProfile": {
+      "dataLoggerProfileId": "96CF238F-2278-4625-B558-CC8E9A43983A",
+      "dataLoggerProfileName": "AutoLoggerProfile01",
+      "dataLoggerTypeName": "Tradoglapan Pro"
+    },
+    "rules": [
+      {
+        "ruleId": "9f8afdb3-ed10-4b1b-a420-5eb8c87bc9fa",
+        "ruleName": "Rule 234"
+      }
+    ],
+    "originAndDestination": {
+      "shipmentDirection": "Outbound",
+      "locationOrRoute": "Route",
+      "route": {
+        "routeId": "6fe1f53c-fc51-4729-9c70-1ed0504ed082",
+        "routeName": "AutoRoute DOH-DAC-COX",
+        "originLocationName": "AutoAreaDohaAir",
+        "originLocationId": "CCB314E8-1CDE-44B6-B034-014C68806754",
+        "destinationLocationName": "AutoAreaCoxsBazarRoad",
+        "destinationLocationId": "3D08295F-55D4-44A9-AF4B-04E811C4E571"
+      },
+      "location": {
+        "origin": {
+          "isPredefined": "",
+          "area": ""
+        },
+        "destination": {
+          "isPredefined": "",
+          "area": ""
+        }
+      },
+      "plannedArrivalDate": "2026-12-03T17:50:00.000Z",
+      "plannedDepartureDate": "2026-12-02T17:50:00.000Z"
+    },
+    "assetsInShipment": [
+      {
+        "assetId": "1c9a47a1-1909-452c-bc69-a301154d7648",
+        "assetName": "AutoAPIAsset1743093728",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "3a63e114-6894-4aed-890e-33e0d4d15d84",
+            "dataLoggerName": "AutoDevice1743093731"
+          }
+        ]
+      },
+      {
+        "assetId": "b3c2637b-b597-4085-8d48-5d207be5f023",
+        "assetName": "AutoAPIAsset1743094200",
+        "assetType": "doglapan RKN",
+        "dataLogger": [
+          {
+            "dataLoggerType": "Tradoglapan Pro",
+            "dataLoggerId": "9a084865-e5b6-4fc6-a0e1-c26c141254d8",
+            "dataLoggerName": "AutoDevice1743094205"
+          }
+        ]
+      }
+    ],
+    "airwayBillNumber": "",
+    "email": "auto@doglapanglobal.com,autotest@doglapanglobal.com",
+    "plannedArrivalDate" : "2026-12-03T17:50:00.000Z",
+    "plannedDepartureDate" : "2026-12-02T17:50:00.000Z"
+  },
+  "S022_VerifyShipmentDataInPDF_TC0000": {
+      "shipmentName": "autoshipment002",
+      "shipperName": "N/A",
+      "status": "Completed",
+      "numberOfAssets": 2,
+      "includedAssets": [
+        {
+          "assetName": "autoTest002",
+          "trackingNumber": "N/A",
+          "assetType": "doglapan RKN"
+        }
+      ],
+      "actualArrival": "N/A",
+      "plannedDeparture": "N/A",
+      "actualDeparture": "N/A",
+      "plannedArrival": "N/A",
+      "shipmentDuration": "N/A",
+      "route": [
+        {
+          "locationDetails": "House-29 Rd 19, Dhaka",
+          "AOrigin": "AutoArea001"
+        },
+        {
+          "locationDetails": "73 Rd Number 11A, Dhaka",
+          "waypoint1": "Dhanmondi"
+        },
+        {
+                "locationDetails": "44 Rd No 20, Dhaka 1230,",
+                "waypoint2": "Uttara - Road"
+        },
+        {
+          "ZDestination": "Dhaka International Airport",
+          "locationDetails": "Airport - Dakshinkhan Rd,"
+        }
+      ],
+      "rulesApplied": [
+        "AutoFaRule0001", "Rule using Component"
+      ],
+      "customerSupportPhone": "+1 513 360 7189",
+      "reportGeneratedBy": "System"
+  },
+  "DLP005_verifyAssignedDevicesWithDeviceProfile_TC0000": {
+    "devicesAndDeviceProfiles": [
+      {
+        "deviceName": "Auto Device Tradoglapan RLT T72 003",
+        "deviceId": "b52b3911-59b2-4b29-bac7-e78837be7f15",
+        "externalId": "c5c60ca3-d666-4221-b71e-a7916a89b9c8",
+        "deviceTypeId": "2b1598d8-668d-4be9-9937-966e3004d78d",
+        "deviceType": "Tradoglapan RLT T72",
+        "deviceProfileName": "Auto Profile RLT T72 1742452570",
+        "deviceProfileId": "308894b4-bbcc-4197-8fc7-203d82af3a71"
+      },
+      {
+        "deviceName": "Auto Device Tradoglapan RLT T72 004",
+        "deviceId": "78f2885b-9d04-4084-8afe-b2f1b7abc29a",
+        "externalId": "9db7488e-92fe-42f9-964c-6e4f60693bcc",
+        "deviceTypeId": "2b1598d8-668d-4be9-9937-966e3004d78d",
+        "deviceType": "Tradoglapan RLT T72",
+        "deviceProfileName": "Auto Profile RLT T72 1742452570",
+        "deviceProfileId": "308894b4-bbcc-4197-8fc7-203d82af3a71"
+      }
+    ]
+  }
+}

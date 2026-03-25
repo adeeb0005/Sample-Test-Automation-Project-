@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Shipment Test">
+    <test name="Completion Test">
+        <classes>
+            <!-- classes with regression tests -->
+            <class name="com.TEST.tests.LoginTest">
+                <methods>
+                    <include name="L001_LoginWithEmptyField_TC0000"/>
+                    <include name="L002_LoginWithUnRegisteredCredential_TC0000"/>
+                    <include name="L003_LoginWithInvalidPassword_TC0000"/>
+                    <include name="L004_LoginWithValidCredentials_TC0000"/>
+                </methods>
+            </class>
+            <class name="com.TEST.tests.DashboardTest">
+                <methods>
+                    <include name="D001_VerifySideBarLayout_TC6836"/>
+                </methods>
+            </class>
+            <class name="com.TEST.tests.RulesTest">
+                <methods>
+                    <!-- <include name="RL001_verifyFuncOfDLSorting_TC7652"/> db -->
+                    <!-- <include name="RL002_verifyRulesListSearch_TC7673"/> db -->
+                    <include name="RL003_verifyGlobalRulesCreation_TC8246"/>
+                    <include name="RL004_verifyUpdateRulesFunctionality_TC8272"/>
+                    <include name="RL005_rulesCreateSearchUpdateTestCaseCompilation_TC0000"/>
+                </methods>
+            </class>
+            <class name="com.TEST.tests.AreaTest">
+                <methods>
+                    <include name="AR001_verifyAreaCreation_TC0000"/>
+                    <include name="AR002_areaCreateUpdateSummaryAreaDetailsGeneralInfo_TC0000"/>
+                </methods>
+            </class>
+            <class name="com.TEST.tests.RouteTest">
+                <methods>
+                    <include name="AR001_verifyRouteCreation_TC0000"/>
+                    <include name="AR002_routeCreateUpdateSummaryRouteDetailsGeneralInfo_TC0000"/>
+                </methods>
+            </class>
+            <class name="com.TEST.tests.DataLoggersProfileTest">
+                <methods>
+                    <!-- <include name="DLP001_verifyFuncOfDLSorting_TC8789"/> db -->
+                    <!-- <include name="DLP002_verifyDLPListSearch_TC9336"/> db -->
+                    <!-- <include name="DLP003_CreateNewDeviceAndVerifyDeviceInfoFromListInExndFromDB"/> db -->
+                    <include name="DLP004_createUpdateConfigSearchValidate"/>
+                    <include name="DLP005_verifyAssignedDevicesWithDeviceProfile_TC0000"/>
+                </methods>
+            </class>
+            <class name="com.TEST.tests.DataLoggersTest">
+                <methods>
+                    <!-- <include name="DL001_verifyFuncOfDLSorting_TC6684"/> db -->
+                    <!-- <include name="DL002_verifyDataLoggerListSearch_TC7727"/> db -->
+                    <!-- <include name="DL003_CreateNewDeviceAndVerifyDeviceInfoFromListInExndFromDB_TC6053"/> db -->
+                    <include name="DL004_verifyCreatingDataLoggerTypeWithDataLoggerProfile_TC0000"/>
+                    <include name="DL005_createUpdateSearchPopupCardDetailsPage_TC0000"/>
+                    <include name="DL006_dataLoggerProfileValidate_TC0000"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
